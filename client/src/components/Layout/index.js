@@ -70,24 +70,18 @@ const Layout = ({ user, setUser }) => {
         icon: <PeopleAltOutlined />,
       },
       {
-        text: "Third Party",
+        text: "Employees",
         path: "/admin/thirdParty",
         icon: <PeopleAltOutlined />,
       },
       {
-        text: "Jobs",
+        text: "Orders",
         path: "/admin/jobs",
         icon: <WorkOutline />,
       },
       {
         text: "Complaints",
         path: "/admin/complaints",
-        icon: <FeedbackOutlined />,
-      },
-
-      {
-        text: "Withdrawals",
-        path: "/admin/withdrawals",
         icon: <FeedbackOutlined />,
       },
     ];

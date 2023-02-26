@@ -7,12 +7,12 @@ import Job from "../../services/Job";
 import JobCategory from "../../services/JobCategory";
 import SecondaryUser from "../../services/SecondaryUser";
 
-import Card from '@mui/material//Card';
-import CardContent from '@mui/material//CardContent';
-import Typography from '@mui/material//Typography';
+import Card from "@mui/material//Card";
+import CardContent from "@mui/material//CardContent";
+import Typography from "@mui/material//Typography";
 
 import BasicCard from "../../components/BasicCard";
-import UserJobs from '../../components/Users/UserJobs';
+import UserJobs from "../../components/Users/UserJobs";
 
 import useStyles from "./styles";
 
@@ -130,19 +130,19 @@ const Dashboard = () => {
     <>
       <Grid container spacing={3} className={classes.gridContainer}>
         <Grid item xs={3}>
-          <BasicCard text="Total Service Providers" count={countProvider} />
+          <BasicCard text="Total Businesses" count={countProvider} />
         </Grid>
         <Grid item xs={3}>
-          <BasicCard text="Total Service Consumers" count={countConsumer} />
+          <BasicCard text="Total Delivery Agents" count={countConsumer} />
         </Grid>
         <Grid item xs={3}>
-          <BasicCard text="Total Third Party" count={countThirdparty} />
+          <BasicCard text="Total Customers" count={countThirdparty} />
         </Grid>
         <Grid item xs={3}>
-          <BasicCard text="Completed Jobs" count={countCompletedJob} />
+          <BasicCard text="Completed Orders" count={countCompletedJob} />
         </Grid>
         <Grid item xs={3}>
-          <BasicCard text="Pending Jobs" count={countPendingJob} />
+          <BasicCard text="Pending Orders" count={countPendingJob} />
         </Grid>
         <Grid item xs={3}>
           <BasicCard text="Total Complaints" count={countComplaint} />
@@ -156,12 +156,10 @@ const Dashboard = () => {
       </Grid>
 
       <Card className="root">
-          <CardContent>
-              <Typography variant="h5">
-                  Job History
-              </Typography>
-              <UserJobs type="both" id='1'/>
-          </CardContent>
+        <CardContent>
+          <Typography variant="h5">Job History</Typography>
+          <UserJobs type="both" id="1" />
+        </CardContent>
       </Card>
     </>
   );
